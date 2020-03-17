@@ -27,5 +27,13 @@ namespace Wpf_UI
             DataContext = viewModel;
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox == null) return; // don't use this unless you are a textbox dummy -.-
+
+            
+        }
     }
 }
